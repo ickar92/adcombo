@@ -13,7 +13,7 @@
 		</div>
 </template>
 
-<style>
+<style scoped>
 .navigation {
 	background: linear-gradient(to top, #c9c9c9, #ffffff);
 	display: flex;
@@ -21,6 +21,7 @@
 	align-items: center;
 	box-shadow: 0 8px 6px -6px #a1a1a1;
 	margin-top: 25px;
+	margin-bottom: 30px;
 }
 
 .menu {
@@ -41,8 +42,13 @@
 	padding: 10px 20px;
 	text-decoration: none;
 	color: inherit;
+	font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+	font-size: 16px;
 }
-
+.menu a:active {
+	background: linear-gradient(to top, #ffffff, #c9c9c9);
+}
 .navigation .search {
 	margin-right: 25px;
 	
@@ -54,5 +60,15 @@ input[type="text"] {
   background-position: 147px -3px;
   background-repeat: no-repeat;
 
+}
+@media screen and (max-width: 700px){
+	.navigation {
+		flex-direction: column;
+	}
+	.navigation .search {
+	margin-top: 25px;
+	margin-bottom: 10px;
+	
+}
 }
 </style>

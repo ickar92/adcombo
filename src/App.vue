@@ -29,8 +29,13 @@ export default {
 	padding: 0;
 }
 body {
-	background: #ddd;
+	background: #c1c0bf;
 	color: #4c4c4c;
+}
+@media screen and (max-width: 980px) {
+  body {
+    padding: 20px;
+  }
 }
 
 ul {
@@ -38,7 +43,7 @@ ul {
 }
 
 .wrapper {
-	max-width: 1200px;
+	max-width: 960px;
 	margin: 0 auto;
 }
 
@@ -52,5 +57,8 @@ h1 {
 h1 span {
 	color: black;
   font-weight: 600;
+}
+main {
+  margin-bottom: 100px;
 }
 </style>
