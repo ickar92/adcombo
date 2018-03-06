@@ -1,28 +1,56 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="wrapper">
+    <h1><span>locus</span> advertising</h1>
+    <navigation></navigation>
+    <main>
+      <router-view></router-view>
+    </main>
   </div>
+    
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navigation from './components/Navigation.vue'
+
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Navigation
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #ddd;
+	color: #4c4c4c;
+}
+
+ul {
+	list-style: none;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-transform: uppercase;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  margin-top: 25px;
+}
+
+h1 span {
+	color: black;
+  font-weight: 600;
 }
 </style>
