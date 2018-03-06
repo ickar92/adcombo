@@ -56,9 +56,7 @@ export default {
 	margin-top: 30px;
 }
 
-service:not(:last-child) {
-	border-right: 1px solid #a3a3a3;
-}
+
 .services__item {
 	text-align: center;
 	padding: 15px;
@@ -83,8 +81,11 @@ service:not(:last-child) {
 	.services {
 		flex-direction: column;
 	}
-	.services__item {
+	.services__item:not(:last-child) {
 		border-right: none;
+	}
+	.services__item p {
+		text-align: center;
 	}
 }
 </style>
