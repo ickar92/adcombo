@@ -55,11 +55,7 @@ export default {
 	justify-content: center;
 	margin-top: 30px;
 }
-@media screen and (max-width: 700px){
-	.services {
-		flex-direction: column;
-	}
-}
+
 service:not(:last-child) {
 	border-right: 1px solid #a3a3a3;
 }
@@ -82,5 +78,13 @@ service:not(:last-child) {
 	font-family: 'Tahoma', sans-serif;
 	font-size: 12px;
 	line-height: 18px;
+}
+@media screen and (max-width: 700px){
+	.services {
+		flex-direction: column;
+	}
+	.services__item {
+		border-right: none;
+	}
 }
 </style>
